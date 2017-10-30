@@ -13,7 +13,7 @@
 
 LOCAL_PATH := $(call my-dir)
 SAMSUNG_TARGETS := fortuna3g fortunave3g fortunafz
- 
+
 ifneq ($(filter $(SAMSUNG_TARGETS),$(TARGET_DEVICE)),)
 include $(all-subdir-makefiles)
 include $(CLEAR_VARS)
@@ -103,7 +103,7 @@ MODEM_IMAGES := \
 	modem.b18 modem.b19 modem.b20 modem.b21 modem.b22 modem.b23 \
 	modem.b24 modem.b25 modem.b26 modem.b27 modem.b28 modem.mdt \
     mba.mbn
-	
+
 MODEM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(MODEM_IMAGES)))
 $(MODEM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Modem firmware link: $@"

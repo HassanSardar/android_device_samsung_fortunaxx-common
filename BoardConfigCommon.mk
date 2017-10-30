@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Inherit from samsung qcom-common
--include device/samsung/qcom-common/BoardConfigCommon.mk 
+-include device/samsung/qcom-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/fortunaxx-common/BoardConfigVendor.mk
