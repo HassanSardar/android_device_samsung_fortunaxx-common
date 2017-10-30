@@ -120,7 +120,7 @@ case "$target" in
                 chmod -h 0660 /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor
                 chmod -h 0660 /sys/class/devfreq/0.qcom,cpubw/min_freq
                 chmod -h 0660 /sys/class/devfreq/0.qcom,cpubw/max_freq
-                
+
                 echo "25000 1094400:50000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
                 echo 90 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
                 echo 25000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate
@@ -130,14 +130,14 @@ case "$target" in
                 echo 50000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
                 echo 50000 > /sys/devices/system/cpu/cpufreq/interactive/max_freq_hysteresis
                 echo 200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-                
+
                 # Bring up all cores online
                 echo 1 > /sys/devices/system/cpu/cpu1/online
                 echo 1 > /sys/devices/system/cpu/cpu2/online
                 echo 1 > /sys/devices/system/cpu/cpu3/online
                 echo 1 > /sys/devices/system/cpu/cpu4/online
             ;;
-        esac      
+        esac
     ;;
 esac
 
