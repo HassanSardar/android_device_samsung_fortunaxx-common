@@ -1,0 +1,3 @@
+# GPS
+TARGET_GPS_HAL_PATH                    := $(PLATFORM_PATH)/gps
+BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET  := true
