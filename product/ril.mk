@@ -1,0 +1,4 @@
+# RIL
+PRODUCT_PACKAGES += \
+	Stk \
+	Stk2
