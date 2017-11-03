@@ -9,3 +9,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
         ro.adb.secure=0 \
         ro.debuggable=1 \
         persist.service.adb.enable=1
+
+# Storage
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.sys.sdcardfs=true

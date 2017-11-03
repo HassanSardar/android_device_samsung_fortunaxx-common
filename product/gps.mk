@@ -18,3 +18,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	com.android.location.provider \
 	com.android.location.provider.xml
+
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.loc.nlp_name=com.qualcomm.location \
+	persist.gps.qc_nlp_in_use=1 \
+	ro.gps.agps_provider=1

@@ -6,6 +6,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=240
 
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+	debug.composition.type=c2d \
+	ro.opengles.version=196608 \
+	debug.egl.hw=1 \
+	debug.sf.hw=1
+
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 

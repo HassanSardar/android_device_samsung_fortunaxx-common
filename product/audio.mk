@@ -8,3 +8,29 @@ PRODUCT_COPY_FILES += \
 # Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml
+
+# Audio encoders
+PRODUCT_PROPERTY_OVERRIDES += \
+	qcom.hw.aac.encoder=false
+
+# Audio offload
+PRODUCT_PROPERTY_OVERRIDES += \
+	audio.offload.video=true \
+	audio.offload.buffer.size.kb=64 \
+	audio.offload.gapless.enabled=true \
+	audio.offload.pcm.16bit.enable=false \
+	audio.offload.pcm.24bit.enable=false \
+	av.streaming.offload.enable=true \
+	tunnel.audio.encode=false
+
+# Audio voice recording
+PRODUCT_PROPERTY_OVERRIDES += \
+	use.voice.path.for.pcm.voip=false \
+
+# Fluence
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.audio.fluence.speaker=true \
+	persist.audio.fluence.voicecall=true \
+	persist.audio.fluence.voicerec=false \
+	ro.qc.sdk.audio.fluencetype=none \
+	ro.qc.sdk.audio.ssr=false
