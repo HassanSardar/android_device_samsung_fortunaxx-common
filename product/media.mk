@@ -1,14 +1,14 @@
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.aac_51_output_enabled=true \
+	media.aac_51_output_enabled=true \
 	qcom.hw.aac.encoder=false \
 	vidc.enc.narrow.searchrange=1
 
 
-# WiFi Display
+# WiDi
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.wfd.enable=1
-    persist.sys.wfd.virtual=0
+	persist.debug.wfd.enable=1 \
+	persist.sys.wfd.virtual=0
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \

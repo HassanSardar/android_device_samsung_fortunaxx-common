@@ -5,9 +5,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libmm-qcamera \
-    camera.msm8916 \
-    Snap
+	libmm-qcamera \
+	camera.msm8916 \
+	Snap
 
 # Camera
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \

@@ -5,10 +5,10 @@ PRODUCT_COPY_FILES += \
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
-        ro.secure=0 \
-        ro.adb.secure=0 \
-        ro.debuggable=1 \
-        persist.service.adb.enable=1
+	ro.secure=0 \
+	ro.adb.secure=0 \
+	ro.debuggable=1 \
+	persist.service.adb.enable=1
 
 # Storage
 PRODUCT_PROPERTY_OVERRIDES += \

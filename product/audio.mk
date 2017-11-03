@@ -25,7 +25,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio voice recording
 PRODUCT_PROPERTY_OVERRIDES += \
-	use.voice.path.for.pcm.voip=false \
+	use.voice.path.for.pcm.voip=false
 
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
